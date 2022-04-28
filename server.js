@@ -2,6 +2,8 @@ const express = require('express');
 
 const app = express();
 
+const PORT = process.env.PORT || 3001;
+
 function filterByQuery(query, animalsArray) {
   let personalityTraitsArray = [];
   // Note that we save the animalsArray as filteredResults here:
